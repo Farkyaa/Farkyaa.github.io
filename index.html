@@ -4,39 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная - Farkya</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background-color: #333; color: white; padding: 1em 0; text-align: center; }
-        nav { background-color: #444; color: white; padding: 0.5em 0; text-align: center; }
-        nav a { color: white; text-decoration: none; padding: 0.5em 1em; }
-        nav a:hover { background-color: #555; }
-        main { padding: 20px; }
     </style>
 </head>
 <body>
 
-    <header>
+    <header class="bg-primary text-white text-center py-3"> <!-- Bootstrap bg-primary -->
         <h1>Farkya</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Главная</a> |
-        <a href="about.html">О нас</a> |
-        <a href="services.html">Услуги</a> |
-        <a href="contact.html">Контакты</a>
+    <nav class="bg-dark text-center py-2"> <!-- Нет bg-success в navbar -->
+        <a href="index.html" class="text-white">Главная</a> |
+        <a href="about.html" class="text-white">О нас</a> |
+        <a href="services.html" class="text-white">Услуги</a> |
+        <a href="contact.html" class="text-white">Контакты</a>
     </nav>
 
-    <main>
-        <h2>Добро пожаловать!</h2>
-        <p>Farkya - ваш надежный партнер в сфере покупки и продажи устройств Mac.</p>
-        <h3>Наши преимущества:</h3>
-        <ul>
-            <li>Широкий выбор устройств Mac</li>
-            <li>Выгодные условия покупки и продажи</li>
-            <li>Профессиональная консультация</li>
-            <li>Гарантия качества</li>
-        </ul>
-    </main>
+    <div class="container mt-3"> <!-- Bootstrap container -->
+        <div class="row"> <!-- Bootstrap row -->
+            <div class="col-md-2 bg-light"> <!-- Левая колонка -->
+                Боковая панель
+            </div>
+            <div class="col-md-8 bg-white"> <!-- Центральная колонка -->
+                <h2>Добро пожаловать!</h2>
+                <p>Farkya - ваш надежный партнер в сфере покупки и продажи устройств Mac.</p>
 
+                <table class="table table-bordered bg-success"> <!-- Bootstrap table и bg-success -->
+                    <thead>
+                        <tr>
+                            <th>Модель</th>
+                            <th>Цена</th>
+                            <th>Состояние</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MacBook Pro</td>
+                            <td>15000</td>
+                            <td>Отличное</td>
+                        </tr>
+                        <tr>
+                            <td>iMac</td>
+                            <td>12000</td>
+                            <td>Хорошее</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-2 bg-light"> <!-- Правая колонка -->
+                Боковая панель
+            </div>
+        </div>
+       <div class="row">
+            <div class="col-md-12 bg-primary text-white text-center py-2">
+                Нижний блок
+            </div>
+        </div>
+    </div>
+       <footer class="bg-dark text-white text-center py-2">  <!-- Bootstrap bg-primary -->
+        &copy; 2024 Farkya
+    </footer>
 </body>
 </html>

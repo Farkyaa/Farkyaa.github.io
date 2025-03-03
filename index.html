@@ -6,19 +6,22 @@
     <title>Главная - Farkya</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
     <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .bordered {
+            border: 1px solid black; /* Тонкая черная рамка */
+        }
         .transparent-table {
             background-color: transparent !important; /* Важно для переопределения Bootstrap */
         }
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
     </style>
 </head>
 <body>
 
-    <header class="bg-primary text-white text-center py-3"> <!-- Bootstrap bg-primary -->
+    <header class="bg-primary text-white text-center py-3 bordered"> <!-- Bootstrap bg-primary -->
         <h1>Farkya</h1>
     </header>
 
-    <nav class="bg-dark text-center py-2"> <!-- Нет bg-success в navbar -->
+    <nav class="bg-dark text-center py-2 bordered"> <!-- Нет bg-success в navbar -->
         <a href="index.html" class="text-white">Главная</a> |
         <a href="about.html" class="text-white">О нас</a> |
         <a href="services.html" class="text-white">Услуги</a> |
@@ -26,11 +29,11 @@
     </nav>
 
     <div class="container mt-3"> <!-- Bootstrap container -->
-        <div class="row"> <!-- Bootstrap row -->
-            <div class="col-md-2"> <!-- Левая колонка -->
+        <div class="row bordered"> <!-- Bootstrap row -->
+            <div class="col-md-2 bordered"> <!-- Левая колонка -->
 
             </div>
-            <div class="col-md-8"> <!-- Центральная колонка -->
+            <div class="col-md-8 bordered"> <!-- Центральная колонка -->
                 <h2>Добро пожаловать!</h2>
                 <p>Farkya - ваш надежный партнер в сфере покупки и продажи устройств Mac.</p>
 
@@ -56,12 +59,12 @@
                     </tbody>
                 </table>
             </div>
-            <div class="col-md-2"> <!-- Правая колонка -->
+            <div class="col-md-2 bordered"> <!-- Правая колонка -->
 
             </div>
         </div>
     </div>
 
-    
+
 </body>
 </html>
